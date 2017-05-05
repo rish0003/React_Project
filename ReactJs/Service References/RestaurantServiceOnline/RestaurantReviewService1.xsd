@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Restaurants">
+    <xs:sequence>
+      <xs:element name="restaurantField" nillable="true" type="tns:ArrayOfRestaurantsRestaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Restaurants" nillable="true" type="tns:Restaurants" />
+  <xs:complexType name="ArrayOfRestaurantsRestaurant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantsRestaurant" nillable="true" type="tns:RestaurantsRestaurant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantsRestaurant" nillable="true" type="tns:ArrayOfRestaurantsRestaurant" />
+  <xs:complexType name="RestaurantsRestaurant">
+    <xs:sequence>
+      <xs:element name="addressField" nillable="true" type="tns:AddressType" />
+      <xs:element name="appetizersField" nillable="true" type="tns:ArrayOfRestaurantsRestaurantAppetizer" />
+      <xs:element name="entreesField" nillable="true" type="tns:ArrayOfRestaurantsRestaurantEntree" />
+      <xs:element name="imageField" nillable="true" type="tns:RestaurantsRestaurantImage" />
+      <xs:element name="logoField" nillable="true" type="xs:string" />
+      <xs:element name="nameField" nillable="true" type="xs:string" />
+      <xs:element name="phoneField" nillable="true" type="xs:string" />
+      <xs:element name="reviewField" nillable="true" type="tns:RestaurantsRestaurantReview" />
+      <xs:element name="summaryField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurant" nillable="true" type="tns:RestaurantsRestaurant" />
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="cityField" nillable="true" type="xs:string" />
+      <xs:element name="postalCodeField" nillable="true" type="xs:string" />
+      <xs:element name="provinceField" type="tns:ProvinceType" />
+      <xs:element name="streetField" nillable="true" type="tns:AddressTypeStreet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:simpleType name="ProvinceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ontario" />
+      <xs:enumeration value="Quebec" />
+      <xs:enumeration value="Manitoba" />
+      <xs:enumeration value="Alberta" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProvinceType" nillable="true" type="tns:ProvinceType" />
+  <xs:complexType name="AddressTypeStreet">
+    <xs:sequence>
+      <xs:element name="nameField" nillable="true" type="xs:string" />
+      <xs:element name="numberField" type="xs:unsignedShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressTypeStreet" nillable="true" type="tns:AddressTypeStreet" />
+  <xs:complexType name="ArrayOfRestaurantsRestaurantAppetizer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantsRestaurantAppetizer" nillable="true" type="tns:RestaurantsRestaurantAppetizer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantsRestaurantAppetizer" nillable="true" type="tns:ArrayOfRestaurantsRestaurantAppetizer" />
+  <xs:complexType name="RestaurantsRestaurantAppetizer">
+    <xs:sequence>
+      <xs:element name="descField" nillable="true" type="xs:string" />
+      <xs:element name="priceField" nillable="true" type="tns:ArrayOfRestaurantsRestaurantAppetizerPrice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantAppetizer" nillable="true" type="tns:RestaurantsRestaurantAppetizer" />
+  <xs:complexType name="ArrayOfRestaurantsRestaurantAppetizerPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantsRestaurantAppetizerPrice" nillable="true" type="tns:RestaurantsRestaurantAppetizerPrice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantsRestaurantAppetizerPrice" nillable="true" type="tns:ArrayOfRestaurantsRestaurantAppetizerPrice" />
+  <xs:complexType name="RestaurantsRestaurantAppetizerPrice">
+    <xs:sequence>
+      <xs:element name="currencyField" nillable="true" type="xs:string" />
+      <xs:element name="quantityField" type="xs:unsignedByte" />
+      <xs:element name="quantityFieldSpecified" type="xs:boolean" />
+      <xs:element name="valueField" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantAppetizerPrice" nillable="true" type="tns:RestaurantsRestaurantAppetizerPrice" />
+  <xs:complexType name="ArrayOfRestaurantsRestaurantEntree">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantsRestaurantEntree" nillable="true" type="tns:RestaurantsRestaurantEntree" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantsRestaurantEntree" nillable="true" type="tns:ArrayOfRestaurantsRestaurantEntree" />
+  <xs:complexType name="RestaurantsRestaurantEntree">
+    <xs:sequence>
+      <xs:element name="descField" nillable="true" type="xs:string" />
+      <xs:element name="priceField" nillable="true" type="tns:RestaurantsRestaurantEntreePrice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantEntree" nillable="true" type="tns:RestaurantsRestaurantEntree" />
+  <xs:complexType name="RestaurantsRestaurantEntreePrice">
+    <xs:sequence>
+      <xs:element name="currencyField" nillable="true" type="xs:string" />
+      <xs:element name="valueField" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantEntreePrice" nillable="true" type="tns:RestaurantsRestaurantEntreePrice" />
+  <xs:complexType name="RestaurantsRestaurantImage">
+    <xs:sequence>
+      <xs:element name="heightField" nillable="true" type="tns:RestaurantsRestaurantImageHeight" />
+      <xs:element name="nameField" nillable="true" type="xs:string" />
+      <xs:element name="widthField" nillable="true" type="tns:RestaurantsRestaurantImageWidth" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantImage" nillable="true" type="tns:RestaurantsRestaurantImage" />
+  <xs:complexType name="RestaurantsRestaurantImageHeight">
+    <xs:sequence>
+      <xs:element name="unitField" nillable="true" type="xs:string" />
+      <xs:element name="valueField" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantImageHeight" nillable="true" type="tns:RestaurantsRestaurantImageHeight" />
+  <xs:complexType name="RestaurantsRestaurantImageWidth">
+    <xs:sequence>
+      <xs:element name="unitField" nillable="true" type="xs:string" />
+      <xs:element name="valueField" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantImageWidth" nillable="true" type="tns:RestaurantsRestaurantImageWidth" />
+  <xs:complexType name="RestaurantsRestaurantReview">
+    <xs:sequence>
+      <xs:element name="dateField" nillable="true" type="tns:RestaurantsRestaurantReviewDate" />
+      <xs:element name="ratingField" type="xs:int" />
+      <xs:element name="reviewerField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantReview" nillable="true" type="tns:RestaurantsRestaurantReview" />
+  <xs:complexType name="RestaurantsRestaurantReviewDate">
+    <xs:sequence>
+      <xs:element name="dayField" type="xs:unsignedByte" />
+      <xs:element name="monthField" nillable="true" type="xs:string" />
+      <xs:element name="yearField" type="xs:unsignedShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantsRestaurantReviewDate" nillable="true" type="tns:RestaurantsRestaurantReviewDate" />
+</xs:schema>

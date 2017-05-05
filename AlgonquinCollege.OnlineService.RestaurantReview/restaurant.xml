@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<Restaurants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.algonquincollege.com/onlineservice/reviews">
+  <Restaurant>
+    <name>Laughing Man</name>
+    <logo>Visit the Laughing Man</logo>
+    <image>
+      <name>laughing-man.gif</name>
+      <width unit="px">50</width>
+      <height unit="px">200</height>
+    </image>
+    <address>
+      <street>
+        <number>0</number>
+        <name>2100 Lakeview Road</name>
+      </street>
+      <city>Kanata</city>
+      <province>NovaScotia</province>
+      <postalCode>K2K 2K78</postalCode>
+    </address>
+    <phone>613-123-4567</phone>
+    <review>
+      <rating>2</rating>
+      <date>
+        <day>10</day>
+        <month>January</month>
+        <year>2015</year>
+      </date>
+      <reviewer>Hunter S. Thompson</reviewer>
+    </review>
+    <summary>bbbbbbbThe food is always consistent. A good variety of dim sum, sushi, Chinese and even Vietnamese dishes. The service is quick and the food is plentiful. We sat down last night and within seconds of turning in our first order, the plates were on the table! The teriyaki dishes had the right amount of sauce and weren't sickeningly sweet. The chicken, fish, and beef were perfectly cooked. The maki-rolls were neatly rolled, cut properly and seasoned well. Loved the General Tao chicken, the steamed BBQ pork buns, the eel sushi and the lovely eggplant. We will be going back again! I would highly recommend it.    </summary>
+    <appetizers>
+      <appetizer>
+        <desc>Crab cakes with a creamy dill sauce served with crispy herbed fries.</desc>
+        <price currency="CAD">23</price>
+      </appetizer>
+      <appetizer>
+        <desc>Garden vegetable soup with chocolate sauce.</desc>
+        <price currency="CAD">15</price>
+      </appetizer>
+    </appetizers>
+    <entrees>
+      <entree>
+        <desc>Braised jumbo sea scallops on a sun-dried roast tomato base.</desc>
+        <price currency="CAD">39</price>
+      </entree>
+      <entree>
+        <desc>Free-range chicken breast stuffed with morels in a brandy sauce.</desc>
+        <price currency="CAD">31</price>
+      </entree>
+      <entree>
+        <desc>Roast pork loin on a bed of garlic ginger apple slaw.</desc>
+        <price currency="CAD">34</price>
+      </entree>
+    </entrees>
+  </Restaurant>
+  <Restaurant>
+    <name>Gong’s Asian Cuisine</name>
+    <logo>Visit the Laughing Man</logo>
+    <image>
+      <name>gong-asian-cuisine.gif</name>
+      <width unit="px">150</width>
+      <height unit="px">250</height>
+    </image>
+    <address>
+      <street>
+        <number>0</number>
+        <name>Woodroffe Avenue</name>
+      </street>
+      <city>Ottawa</city>
+      <province>Alberta</province>
+      <postalCode>K2G 1V8</postalCode>
+    </address>
+    <phone>613-727-4723</phone>
+    <review>
+      <rating>3</rating>
+      <date>
+        <day>3</day>
+        <month>January</month>
+        <year>2015</year>
+      </date>
+      <reviewer>Brenda P. Smith</reviewer>
+    </review>
+    <summary>bbbbbbbThe food is always consistent. A good variety of dim sum, sushi, Chinese and even Vietnamese dishes. The service is quick and the food is plentiful. We sat down last night and within seconds of turning in our first order, the plates were on the table! The teriyaki dishes had the right amount of sauce and weren't sickeningly sweet. The chicken, fish, and beef were perfectly cooked. The maki-rolls were neatly rolled, cut properly and seasoned well. Loved the General Tao chicken, the steamed BBQ pork buns, the eel sushi and the lovely eggplant. We will be going back again! I would highly recommend it.    </summary>
+    <appetizers>
+      <appetizer>
+        <desc>Egg Roll</desc>
+        <price currency="CAD" quantity="12">15</price>
+        <price currency="CAD" quantity="1">1.50</price>
+      </appetizer>
+      <appetizer>
+        <desc>Spring Roll</desc>
+        <price currency="CAD" quantity="12">15</price>
+        <price currency="CAD" quantity="1">1.50</price>
+      </appetizer>
+      <appetizer>
+        <desc>Shrimp Chips</desc>
+        <price currency="CAD">2.50</price>
+      </appetizer>
+      <appetizer>
+        <desc>Fried Noodles</desc>
+        <price currency="CAD">1</price>
+      </appetizer>
+      <appetizer>
+        <desc>Sweet &amp; Sour Fried Wonton Skin</desc>
+        <price currency="CAD" quantity="12">3.50</price>
+      </appetizer>
+    </appetizers>
+    <entrees>
+      <entree>
+        <desc>Scallops with Vegetables</desc>
+        <price currency="CAD">14.95</price>
+      </entree>
+      <entree>
+        <desc>Sweet and Sour Fish Cantonese Style</desc>
+        <price currency="CAD">13.95</price>
+      </entree>
+      <entree>
+        <desc>Shrimps with Vegetables</desc>
+        <price currency="CAD">12.95</price>
+      </entree>
+      <entree>
+        <desc>Beef with Mushroom</desc>
+        <price currency="CAD">10.25</price>
+      </entree>
+      <entree>
+        <desc>Beef with Tomato</desc>
+        <price currency="CAD">10.25</price>
+      </entree>
+      <entree>
+        <desc>Beef with Broccoli</desc>
+        <price currency="CAD">10.25</price>
+      </entree>
+    </entrees>
+  </Restaurant>
+</Restaurants>

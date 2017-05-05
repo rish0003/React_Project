@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eccdf461-291a-4289-a3db-0eca6778db18" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5363/RestaurantReviewService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RestaurantReviewService.disco" MetadataType="Disco" ID="348f60ee-ed72-47e7-8efc-527f090b9134" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?disco" />
+    <MetadataFile FileName="RestaurantReviewService.xsd" MetadataType="Schema" ID="5e762500-4f42-4012-af3b-a4229b1c2a2f" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?xsd=xsd3" />
+    <MetadataFile FileName="RestaurantReviewService1.xsd" MetadataType="Schema" ID="9d6bdee0-3846-4ed4-85c0-c078af599121" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RestaurantReviewService2.xsd" MetadataType="Schema" ID="208aa58a-0559-420b-9186-eaec3a410b8b" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RestaurantReviewService3.xsd" MetadataType="Schema" ID="4ba2c7ce-b5d4-4c3c-bded-88b44a3f5e89" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RestaurantReviewService.wsdl" MetadataType="Wsdl" ID="e94a16bb-394f-40dd-824a-ba38ee142b80" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?wsdl" />
+    <MetadataFile FileName="RestaurantReviewService4.xsd" MetadataType="Schema" ID="290b02a0-ff20-4a67-a851-b9f03e6aae56" SourceId="1" SourceUrl="http://localhost:5363/RestaurantReviewService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
